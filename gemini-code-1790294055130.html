@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avyaan Corp | AI-Driven Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google's Inter font for a clean, Apple-like aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation / Header -->
+    <header class="fade-in">
+        <div class="logo">Avyaan Corp</div>
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <h1>Transforming Operations Through AI-Driven Engineering & Strategy</h1>
+        <p class="hero-subtitle">
+            We are an end-to-end software and AI consulting firm dedicated to helping organizations and individuals build better tech, optimize operations, and scale with confidence. 
+            Whether partnering with enterprise teams or individuals, we bridge the gap between technical capability and business execution.
+        </p>
+    </section>
+
+    <!-- Services / Holistic Approach Section -->
+    <section class="services">
+        <h2 class="section-title fade-in">Our Holistic Approach</h2>
+        <p class="section-subtitle fade-in">Spanning every phase of your software lifecycle.</p>
+        
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="card material-you-card fade-in">
+                <div class="card-icon">🎯</div>
+                <h3>Strategic Planning & Assessments</h3>
+                <p>Evaluating legacy architectures, identifying operational bottlenecks, and crafting clear, high-ROI AI implementation roadmaps.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card material-you-card fade-in">
+                <div class="card-icon">⚡</div>
+                <h3>Process & Operational Efficiency</h3>
+                <p>Streamlining developer workflows, refining CI/CD pipelines, and integrating intelligent automation into everyday systems.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card material-you-card fade-in">
+                <div class="card-icon">🧠</div>
+                <h3>Modern Workforce Training</h3>
+                <p>Upskilling engineering teams or individuals on cutting-edge software practices, AI-assisted development tools, and data-driven execution.</p>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card material-you-card fade-in">
+                <div class="card-icon">🚀</div>
+                <h3>End-to-End Implementation</h3>
+                <p>Delivering production-ready software and custom AI solutions that turn complex technological challenges into measurable business outcomes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing & Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <div class="contact-container material-you-surface">
+            <h2>Lead through technological innovation.</h2>
+            <p>From strategy to delivery, we empower teams or individuals to work smarter and ship faster.</p>
+            
+            <div class="contact-info">
+                <div class="contact-pill">
+                    <strong>Email:</strong> <a href="mailto:avyaancorp@gmail.com">avyaancorp@gmail.com</a>
+                </div>
+                <div class="contact-pill">
+                    <strong>Address:</strong> 137 Pusan, Irvine CA - 92618
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Avyaan Corp. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
